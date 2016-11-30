@@ -1,0 +1,45 @@
+﻿body {
+    font-family:Calibri, sans-serif;
+
+}
+#Menu {
+    width:60%;
+    margin:auto;
+}
+label {
+    display:block;
+}
+
+#Menu article {
+    width:33%;
+    margin:auto;
+    display:inline;
+    float:left;
+    min-height:200px;
+}
+
+section {
+    width:100%;
+    text-align:center;
+}
+
+input[type=button] {
+    width:30%;
+    margin:auto;
+    height:30px;
+}
+table {
+    width:30%;
+    margin:auto;
+}
+tr:first-child {
+    width:80%;
+}
+.total {
+    border-top:1px solid black;
+}
+
+#OrderSummary {
+    width:100%;
+    display: none;
+}

@@ -1,0 +1,154 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Pizza Menu</title>
+	<meta charset="utf-8" />
+    <link href="css/site.css" rel="stylesheet" />
+</head>
+<body>
+    <div id="Menu">
+        <article>
+            <h3>Size</h3>
+            <label>
+                <input id="Personal" type="radio" name="Size" value="6.0"/> Personal
+            </label>
+            <label>
+                <input id="Medium" type="radio" name="Size" value="10.0"/> Medium
+            </label>
+            <label>
+                <input id="Large" checked type="radio" name="Size" value="14.0"/> Large
+            </label>
+            <label>
+                <input id="X-Large" type="radio" name="Size" value="16.0"/> Extra Large
+            </label>
+        </article>
+        <article>
+            <h3>Meats</h3>
+            <label>
+                <input id="Pepperoni" type="checkbox" name="Meat" value="Pepperoni" /> Pepperoni
+            </label>
+            <label>
+                <input id="Sausage" type="checkbox" name="Meat" value="Sausage" /> Sausage
+            </label>
+            <label>
+                <input id="CanadianBacon" type="checkbox" name="Meat" value="Canadian Bacon" /> Canadian Bacon
+            </label>
+            <label>
+                <input id="GroundBeef" type="checkbox" name="Meat" value="Ground Beef" /> Ground Beef
+            </label>
+            <label>
+                <input id="Anchovi" type="checkbox" name="Meat" value="Anchovi" /> Anchovi
+            </label>
+            <label>
+                <input id="Chicken" type="checkbox" name="Meat" value="Chicken" /> Chicken
+            </label>
+        </article>
+        <article>
+            <h3>Cheese</h3>
+            <label>
+                <input id="CheeseRegular" checked type="radio" name="Cheese" value="Regular" /> Regular
+            </label>
+            <label>
+                <input id="CheeseNone" type="radio" name="Cheese" value="No Cheese" /> No Cheese
+            </label>
+            <label>
+                <input id="CheeseExtra" type="radio" name="Cheese" value="Extra Cheese" /> Extra Cheese
+            </label>
+        </article>
+        <article>
+            <h3>Crust</h3>
+            <label>
+                <input id="CrustPlain" checked type="radio" name="Crust" value="Plain Crust" /> Plain Crust
+            </label>
+            <label>
+                <input id="CrustGarlic" type="radio" name="Crust" value="Garlic Butter Crust" /> Garlic Butter Crust
+            </label>
+            <label>
+                <input id="CrustStuffed" type="radio" name="Crust" value="Cheese Stuffed Crust" /> Cheese Stuffed Crust
+            </label>
+            <label>
+                <input id="CrustSpicy" type="radio" name="Crust" value="Spicy Crust" /> Spicy Crust
+            </label>
+            <label>
+                <input id="CrustHouse" type="radio" name="Crust" value="House Special Crust" /> House Special Crust
+            </label>
+        </article>
+        <article>
+            <h3>Sauce</h3>
+            <label>
+                <input id="SauceMarinara" checked type="radio" name="Sauce" value="Marinara Sauce" /> Marinara Sauce
+            </label>
+            <label>
+                <input id="SauceWhite" type="radio" name="Sauce" value="White Sauce" /> White Sauce
+            </label>
+            <label>
+                <input id="SauceBBQ" type="radio" name="Sauce" value="Barbque Sauce" /> Barbeque Sauce
+            </label>
+            <label>
+                <input id="SauceNone" type="radio" name="Sauce" value="No Sauce" /> No Sauce
+            </label>
+        </article>
+        <article>
+            <h3>Veggies</h3>
+            <label>
+                <input id="Tomatoes" type="checkbox" name="Veggies" value="Tomatoes" /> Tomatoes
+            </label>
+            <label>
+                <input id="Onions" type="checkbox" name="Veggies" value="Onions" /> Onions
+            </label>
+            <label>
+                <input id="Olives" type="checkbox" name="Veggies" value="Olives" /> Olives
+            </label>
+            <label>
+                <input id="GreenPeppers" type="checkbox" name="Veggies" value="Green Peppers" /> Green Peppers
+            </label>
+            <label>
+                <input id="Mushrooms" type="checkbox" name="Veggies" value="Mushrooms" /> Mushrooms
+            </label>
+            <label>
+                <input id="Pinneapple" type="checkbox" name="Veggies" value="Pineapple" /> Pineapple
+            </label>
+            <label>
+                <input id="Spinach" type="checkbox" name="Veggies" value="Spinach" /> Spinach
+            </label>
+            <label>
+                <input id="Jalapeno" type="checkbox" name="Veggies" value="Jalapeno" /> Jalapeno
+            </label>
+        </article>
+        <section>
+            <input type="button" id="Submit" value="Sumbit Order" onclick="GetReceiptInfo()"/>
+        </section>
+    </div>
+    <div id="OrderSummary">
+        <table>
+            <tr>
+                <td id="Size">
+                </td>
+                <td id="SizePrice">
+                </td>
+            </tr>
+            <tr>
+                <td id="Meats"></td>
+                <td id="MeatPrice"></td>
+            </tr>
+            <tr>
+                <td id="Cheese"></td>
+                <td id="CheesePrice"></td>
+            </tr>
+            <tr>
+                <td id="Crust"></td>
+                <td id="CrustPrice"></td>
+            </tr>
+            <tr>
+                <td id="Veggies"></td>
+                <td id="VeggiesPrice"></td>
+            </tr>
+            <tr class="total">
+                <td id="Total">Total</td>
+                <td id="TotalPrice"></td>
+            </tr>
+        </table>
+    </div>
+    <script src="js/scripts.js"></script>
+</body>
+</html>
