@@ -46,12 +46,14 @@ function GetBasePrice(size){
 function GetPriceDetails(order) {
     var priceDetails = {
         base: float(GetBasePrice(order.size[0])),
-        meat: float(order.meat.length * 2.0),
+        meat: float((order.meat.length-1) * 2.0),
         crust: 0.0,
-        veggies: float(order.veggies.length * 2.0),
+        veggies: float((order.veggies.length-1) * 2.0),
         cheese: GetExtraCheesePrice(order.cheese[0], order.size[0]),
         total: 0.0
     };
+    if (priceDetails.meat < 0) priceDetails.meat = 0;
+    if (priceDetails.veggies < 0) priceDetails.veggies = 0;
     if (order.crust == "Stuffed Cheese Crust") priceDetails.crust = float(3.0);
     var total = 0.0;
     for (var k in priceDetails) {
