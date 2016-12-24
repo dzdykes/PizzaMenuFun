@@ -50,13 +50,11 @@ function CheesePrice() {
         }
     }
 
-    switch (size) {
-        case "Personal": return 1.0;
-        case "Medium": return 2.0;
-        case "Large": return 3.0;
-        case "X-Large": return 4.0;
-        default: return false;
-    }
+    if(size=="Personal") return 1.0;
+    else if(size=="Medium") return 2.0;
+    else if(size=="Large") return 3.0;
+    else if(size=="X-Large") return 4.0;
+    else return false;
     return false;
 }
 
